@@ -2,7 +2,7 @@ export function mergeTest() {
 
     console.log(':: Merge Test ::');
 
-    function merge<T, U>(obj1: T, obj2: U): T & U {
+    function merge<T, U>(obj1: T, obj2: U): T & U { // intersection type
         return Object.assign({}, obj1, obj2);
     }
 
