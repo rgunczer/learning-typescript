@@ -30,4 +30,15 @@ let getLargeRooms: <T extends MeetingResource>(rooms: Array<T>, minSize: number)
 
 // let lastValue = primeNums.pop();
 
+type ReportItem = {
+    id: number;
+    name: string;
+    age: number;
+    dob: Date;
+}
 
+type ReportItem2 = {
+    [P in keyof(ReportItem)]?: ReportItem[P];
+}
+
+type ReportItem3 = Partial<ReportItem>;
