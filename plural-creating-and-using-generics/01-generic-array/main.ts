@@ -42,3 +42,14 @@ type ReportItem2 = {
 }
 
 type ReportItem3 = Partial<ReportItem>;
+
+
+type Report = {
+    id?: number;
+    date: Date;
+    approved: boolean;
+    description: string;
+    items: any[];
+    amount?: number;
+}
+
